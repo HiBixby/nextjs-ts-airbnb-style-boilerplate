@@ -10,6 +10,10 @@
     "airbnb-typescript",
     "plugin:prettier/recommended"
   ],
+  "plugins": ["prettier"],
   "parserOptions": { "project": "./tsconfig.json" },
-  "rules": { "react/jsx-props-no-spreading": "off" }
+  "rules": {
+    "react/jsx-props-no-spreading": "off",
+    "prettier/prettier": ["error", { "endOfLine": "auto" }]
+  }
 }
